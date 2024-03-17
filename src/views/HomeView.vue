@@ -7,7 +7,7 @@
 			<div class="container-fluid">
 				<div class="row">
 
-					<div class="col-xl-4 col-xxl-12 col-md-6">
+					<div class="col-xl-4 col-xxl-6 col-md-6">
 						<div class="card">
 							<div class="card-header border-0 pb-0">
 								<h4 class="fs-20 font-w600 m-auto">Actual Compliance Status</h4>
@@ -50,7 +50,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-4 col-xxl-12 col-md-6">
+					<div class="col-xl-4 col-xxl-6 col-md-6">
 						<div class="card">
 							<div class="card-header border-0 pb-0">
 								<h4 class="fs-20 font-w600 m-auto">Desired Compliance Status</h4>

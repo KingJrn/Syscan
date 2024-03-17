@@ -15,14 +15,7 @@
                   <form
                     action="https://eres.dexignzone.com/django/xhtml/index.html"
                   >
-                    <div class="form-group">
-                      <label class="form-label">Username</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="username"
-                      />
-                    </div>
+                    
                     <div class="form-group">
                       <label class="form-label">Email</label>
                       <input
