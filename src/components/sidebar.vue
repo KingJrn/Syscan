@@ -3,7 +3,7 @@
     <div class="deznav-scroll">
       <ul class="metismenu" id="menu">
         <li>
-          <RouterLink to="compliance" class="ai-icon" aria-expanded="false">
+          <RouterLink to="report" class="ai-icon" aria-expanded="false">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -22,7 +22,7 @@
         </li>
 
         <li>
-          <RouterLink to="scanner" class="ai-icon" aria-expanded="false">
+          <RouterLink to="scan" class="ai-icon" aria-expanded="false">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -35,12 +35,12 @@
                 d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0z"
               />
             </svg>
-            <span class="nav-text">Scanner</span>
+            <span class="nav-text">Scan</span>
           </RouterLink>
         </li>
 
         <li>
-          <RouterLink to="Profile-store" class="ai-icon" aria-expanded="false">
+          <RouterLink to="remediation" class="ai-icon" aria-expanded="false">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -53,12 +53,12 @@
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
               />
             </svg>
-            <span class="nav-text">Profile Store</span>
+            <span class="nav-text">Remediation</span>
           </RouterLink>
         </li>
 
         <li>
-          <RouterLink to="credentials" class="ai-icon" aria-expanded="false">
+          <RouterLink to="inventory" class="ai-icon" aria-expanded="false">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -74,7 +74,7 @@
                 d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
               />
             </svg>
-            <span class="nav-text">Credentials</span>
+            <span class="nav-text">Inventory</span>
           </RouterLink>
         </li>
       </ul>

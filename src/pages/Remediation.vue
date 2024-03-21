@@ -8,11 +8,11 @@
 
 <script>
 import Sidebar from "../components/sidebar.vue";
-import Index from "../components/ProfileScore/ProfileScoreIndex.vue";
+import Index from "../components/Remediation/Profiles.vue";
 
 
 export default {
-  name: "Profile-Store",
+  name: "Remediation",
   components: {
     Sidebar,
     Index,

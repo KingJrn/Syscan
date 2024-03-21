@@ -16,12 +16,12 @@
                         <RouterLink class="nav-link active" aria-current="page" to="/">Dashboard</RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink to="/compliance" class="nav-link">
+                        <RouterLink to="/report" class="nav-link">
                             Compliance
                         </RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink to="settings" class="nav-link">Settings</RouterLink>
+                        <RouterLink to="settings" class="nav-link">Administration</RouterLink>
                     </li>
                 </ul>
 

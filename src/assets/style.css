@@ -24744,7 +24744,7 @@ span.num {
 .patient-list tbody tr th:first-child,
 .patient-list thead tr td:first-child,
 .patient-list thead tr th:first-child {
-  width: 30px !important;
+  /* width: 30px !important; */
   padding-right: 15px !important; }
 
 .element-area {

@@ -2,11 +2,11 @@
     <div class="custom-tab-1">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" href="#home1"><i class="la la-home me-2"></i>Jobs</a>
+                <a class="nav-link active" data-bs-toggle="tab" href="#home1"><i class="la la-home me-2"></i>Node</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#profile1"><i class="la la-user me-2"></i>
-                    Nodes</a>
+                    Node Groups</a>
             </li>
         </ul>
         <div class="tab-content">
@@ -34,13 +34,10 @@
                                             <tr>
                                                 <td>
                                                     <div class="d-flex align-items-end">
-                                                        <input type="checkbox" class="form-check-input me-2"
-                                                            id="customCheckBox2" required />
                                                         <p class="mb-0">agentless-54.208.221.24</p>
                                                     </div>
                                                 </td>
-
-                                                <td></td>
+                                                <td>Device</td>
                                                 <td>unknown</td>
                                                 <td>
                                                     <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"

@@ -1,19 +1,19 @@
 <template>
     <div>
         <Sidebar />
-        <ScannerIndex />
+        <NodeIndex />
     </div>
 </template>
 
 <script>
 import Sidebar from "../components/sidebar.vue";
-import ScannerIndex from "@/components/Scanner/ScannerIndex.vue";
+import NodeIndex from "@/components/Inventory/NodeIndex.vue";
 
 export default {
     name: "Scanner",
     components: {
         Sidebar,
-        ScannerIndex,
+        NodeIndex,
     },
 }
 </script>

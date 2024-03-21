@@ -8,11 +8,12 @@
 
 <script>
 import Sidebar from "../components/sidebar.vue";
-import Index from "../components/Credential/credentialsIndex.vue";
+import Index from "../components/scan/ScanIndex.vue";
 
 
 
 export default {
+  name: "Inventory",
   components: {
     Sidebar,
     Index,

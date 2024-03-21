@@ -11,7 +11,7 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/compliance',
+      path: '/report',
       name: 'compliance',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -27,37 +27,45 @@ const router = createRouter({
       component: () => import('../views/AllNotification.vue')
     },
     {
-      path: '/settings',
-      name: 'Settings',
+      path: '/administration',
+      name: 'Administration',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/Settings.vue')
+      component: () => import('../views/Admin.vue')
     },
     // SIDEBAR PAGES
     {
-      path: '/profile-store',
-      name: 'Profile-Store',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../pages/ProfileScore.vue')
-    },
-    {
-      path: '/credentials',
-      name: 'Credentials',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../pages/Credentials.vue')
-    },
-    {
-      path: '/scanner',
+      path: '/scan',
       name: 'Scanner',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../pages/Scanner.vue')
+      component: () => import('../pages/Scan.vue')
+    },
+    {
+      path: '/remediation',
+      name: 'Remediation',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../pages/Remediation.vue')
+    },
+    {
+      path: '/inventory',
+      name: 'Inventory',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../pages/Inventory.vue')
+    },
+    {
+      path: '/node-report',
+      name: 'NodeReport',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../pages/NodeReport.vue')
     },
     // Auth Screens
     {
@@ -91,6 +99,22 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../auth/error404.vue')
+    },
+    {
+      path: '/confirm-email',
+      name: 'Confirm-Email',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../auth/confirmEmail.vue')
+    },
+    {
+      path: '/verification-success',
+      name: 'Verification-Success',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../auth/VerificationSuccess.vue')
     }
   ]
 })
