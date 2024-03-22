@@ -21,7 +21,7 @@
                         </RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink to="settings" class="nav-link">Administration</RouterLink>
+                        <RouterLink to="administration" class="nav-link">Administration</RouterLink>
                     </li>
                 </ul>
 

@@ -29,7 +29,15 @@
                             <div class="pt-4">
                                 <div class="page-titles bg-white p-3"
                                     v-if="showNodes === 'nodes' || showJobs === 'jobs'">
-                                    <a class="hover_scan mb-3 d-block" @click="goBack">Scan Jobs</a>
+                                    <!-- Back button -->
+                                    <div class="mb-4" @click="goBack">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                                        </svg>
+                                        <a href="javascript: void(0)" class="text-primary"> Back</a>
+                                    </div>
                                     <h3 v-if="showJobs === 'jobs'">Scan Jobs Creation</h3>
                                 </div>
                                 <div class="form-head d-flex mb-3 mb-md-4 align-items-start" v-if="add">
@@ -52,20 +60,15 @@
                                     </div>
                                 </div>
                                 <!-- Job and Nodes -->
-                                <JobNodes v-if="add" />
-                                <ShowNodes v-if="showNodes === 'nodes'" />
+                                <NodeGroupIndex v-if="add" />
+                                <AddNodeForm v-if="showNodes === 'nodes'" />
                                 <NewJobs v-if="showJobs === 'jobs'" />
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile">
                             <div class="pt-4">
-                                <h4>Nodes Groups</h4>
-                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                    stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                </p>
-                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                    stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                </p>
+                                <!-- Credentials -->
+                                <Credentials />
                             </div>
                         </div>
                         <div class="tab-pane fade" id="contact">
@@ -100,16 +103,17 @@
 </template>
 
 <script>
-import JobNodes from "./JobNodes.vue"
-import ShowNodes from "./ShowNodes.vue"
+import NodeGroupIndex from "./NodeGroupIndex.vue"
+import AddNodeForm from "./AddNodeForm.vue"
 import NewJobs from "./NewJobs.vue";
-
+import Credentials from "./Credentials.vue";
 export default {
     name: "Scanner",
     components: {
-        JobNodes,
-        ShowNodes,
-        NewJobs
+        NodeGroupIndex,
+        AddNodeForm,
+        NewJobs,
+        Credentials
 
     },
     data() {
