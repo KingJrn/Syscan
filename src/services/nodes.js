@@ -5,6 +5,7 @@ const BaseUrl = "https://dc99-197-210-84-20.ngrok-free.app";
 
 // Endpoints
 const CREATE_NODE_PATH = () => "/nodes";
+const FETCH_NODE_PATH = () => "/nodes/";
 export default {
   createNode: function (NodeData, callback) {
     axios.post(BaseUrl + CREATE_NODE_PATH(), NodeData, {

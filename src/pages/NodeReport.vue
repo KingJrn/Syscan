@@ -16,15 +16,58 @@
                 <div class="row">
 
                     <div class="row justify-content-center">
-                        <div class="col-xl-5 col-xxl-6 col-md-6 ">
+                        <div class="col-xl-5 col-xxl-12 col-md-12">
+                            <div class="card">
+                                <div class="card-header border-0 pb-0">
+                                    <h4 class="fs-5 font-w600 m-auto">Detailed Report Table</h4>
+                                    <button type="button" class="btn btn-primary btn-sm me-2"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                            fill="currentColor" class="bi bi-download me-2" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+                                        </svg>Download</button>
+                                    <button type="button" class="btn btn-primary btn-sm ">Remediate</button>
+
+                                </div>
+                                <div class="card-body text-center">
+
+                                    <div class="table-responsive">
+                                        <table id="example5"
+                                            class="table table-striped patient-list mb-4 dataTablesCard fs-14">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-start">Security Control</th>
+                                                    <th class="text-end">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-primary text-start" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                        <div class="dropdown">
+                                                            <a class=" dropdown-toggle" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                Control 1
+                                                            </a>
+
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-end">Pass</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-xxl-6 col-md-6 ">
                             <div class="card">
                                 <div class="card-header border-0 pb-0">
                                     <h4 class="fs-20 font-w600 m-auto">Node 1 Compliance Status</h4>
                                 </div>
                                 <div class="card-body text-center position-relative">
-                                    <button type="button"
-                                        class="btn btn-primary btn-sm position-absolute scan_btn top-0">Scan
-                                        Node</button>
 
                                     <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center m-auto"
                                         style="width: 200px; height: 200px; ">
@@ -63,127 +106,37 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-xxl-6 col-md-6">
-                            <div class="card">
-                                <div class="card-header border-0 pb-0">
-                                    <h4 class="fs-20 font-w600 m-auto">Desired Compliance Status</h4>
-                                </div>
-                                <div class="card-body text-center">
 
-                                    <div class="rounded-circle bg-body-secondary  d-flex justify-content-center align-items-center m-auto"
-                                        style="width: 200px; height: 200px;">
-                                        <div
-                                            class="rounded-circle bg-white w-75 h-75 d-flex justify-content-evenly align-items-center">
-                                            <p class="text-center text-dark">
-                                            <h2>100%</h2>
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div id="external-events" class="my-3">
-                                        <p>Set Desired Compliance</p>
-                                        <div class="external-event btn-primary light" data-class="bg-primary"><i
-                                                class="fa fa-move"></i><span>Set 1</span></div>
-                                        <div class="external-event btn-warning light" data-class="bg-warning"><i
-                                                class="fa fa-move"></i> Not
-                                            Set 2
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-12 col-xxl-12 col-md-12">
-                        <div class="card">
-                            <div class="card-header border-0 pb-0">
-                                <h4 class="fs-5 font-w600 m-auto">Detailed Report Table</h4>
-                                <button type="button" class="btn btn-primary btn-sm ">Remediate</button>
-
-                            </div>
-                            <div class="card-body text-center">
-
-                                <div class="table-responsive">
-                                    <table id="example5"
-                                        class="table table-striped patient-list mb-4 dataTablesCard fs-14">
-                                        <thead>
-                                            <tr>
-
-                                                <th>Security Control</th>
-                                                <th>Status</th>
-
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-
-                                            <tr>
-                                                <td class="text-primary">
-                                                    <div class="dropdown">
-                                                        <a class=" dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            Control 1
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                                            <li><a class="dropdown-item" href="#">Another action</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Something else
-                                                                    here</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td class="">Pass</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="text-primary">
-                                                    <div class="dropdown">
-                                                        <a class=" dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            control 2
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                                            <li><a class="dropdown-item" href="#">Another action</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Something else
-                                                                    here</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td class="">Failed</td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="text-primary">
-                                                    <div class="dropdown">
-                                                        <a class=" dropdown-toggle" type="button"
-                                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                                            Control 3
-                                                        </a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                                            <li><a class="dropdown-item" href="#">Another action</a>
-                                                            </li>
-                                                            <li><a class="dropdown-item" href="#">Something else
-                                                                    here</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </td>
-                                                <td class="">Pass</td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Doctor</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <h1>Linux System Control Options</h1>
+                        <h2>Control Methods</h2>
+                        <div class="d-flex flex-column">
+                            <a href="#">Option 1</a>
+                            <a href="#">Option 2</a>
+                            <a href="#">Option 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <script>
 

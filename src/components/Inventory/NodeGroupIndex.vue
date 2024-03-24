@@ -82,4 +82,17 @@
 
 <script>
 
+export default {
+    name: "NodeGroupIndex",
+    data() {
+        return {
+            NodeData: {},
+        }
+    }, 
+    mounted() {
+    },
+    methods: {
+        
+    }
+}
 </script>

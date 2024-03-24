@@ -3,39 +3,7 @@
     <!-- row -->
     <div class="container-fluid">
       <div class="page-titles">
-        <div class="col-xl-6 col-lg-6">
-          <div class="row">
-            <div class="col-xl-4 mb-3">
-              <div class="example">
-                <p class="mb-1">Filter By</p>
-                <input class="form-control input-daterange-datepicker" type="date" name="daterange"
-                  value="01/01/2015 - 01/31/2015" />
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="form-head d-flex mb-3 mb-md-4 align-items-start">
-          <div class="me-auto d-none d-lg-block">
-            <a href="" class="btn btn-primary btn-rounded">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-download me-2" viewBox="0 0 16 16">
-                <path
-                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
-                <path
-                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
-              </svg>Download</a>
-          </div>
-
-          <div class="input-group search-area ms-auto d-inline-flex me-3">
-            <input type="text" class="form-control" placeholder="Search here" />
-            <div class="input-group-append">
-              <button type="button" class="input-group-text">
-                <i class="flaticon-381-search-2"></i>
-              </button>
-            </div>
-          </div>
-        </div>
         <!-- alert -->
         <div class="alert alert-light alert-dismissible fade show" v-if="node">
           <p>
@@ -63,24 +31,14 @@
                 <div class="tab-pane fade show active" id="home1" role="tabpanel">
                   <div class="pt-4">
                     <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6">
-                      <!-- Overview -->
+                      <!-- Assessment Report -->
                       <overview />
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="contact1">
-                  <div class="pt-4">
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in Bookmarksgrove.
-                    </p>
-                    <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia and Consonantia, there live the blind
-                      texts. Separated they live in Bookmarksgrove.
-                    </p>
-                  </div>
+                  <!-- Remediation Report -->
+                  <remediate />
                 </div>
               </div>
             </div>
@@ -93,11 +51,13 @@
 
 <script>
 import overview from "../components/Reporting/overview.vue";
+import remediate from "../components/Reporting/remediate.vue";
 
 export default {
   name: "Reporting",
   components: {
     overview,
+    remediate,
   },
   data() {
     return {

@@ -5,8 +5,7 @@
                 v-if="step > 1">Back</a>
             <a href="javascript:void();" class="btn btn-primary btn-sm btn-rounded add-staff ms-2" @click="changeTab"
                 v-if="step < 2">Next</a>
-            <a href="javascript:void();" class="btn btn-primary btn-sm btn-rounded add-staff ms-2" v-if="step === 3">Add
-                1 Nodes</a>
+        
         </div>
         
     </div>
@@ -17,7 +16,7 @@
         <div class="row justify-content-between">
             <div class="bg-white p-4 rounded-2 col-xl-12">
                 <!-- Step 1 -->
-                <Node1 v-show="step === 1"  />
+                <Node1 v-show="step === 1"  @increaseStep ='changeTab'/>
                 <Node2 v-show="step === 2"  />
             </div>
         </div>
