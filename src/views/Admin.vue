@@ -1,16 +1,15 @@
 <template>
-<Sidebar />
-<Settings />
-  
+  <sidebar />
+  <settings />
 </template>
+
 <script>
-  // import Sidebar from '../'
-  // import Settings from './components/Admin/Settings.vue';
-  export default {
-    name: "Admin",
-    component: {
-      Sidebar,
-      Settings
-    }
+import sidebar from '@/components/sidebar.vue';
+import settings from '@/components/settings.vue';
+export default {
+  components: {
+    sidebar,
+    settings,
   }
+}
 </script>

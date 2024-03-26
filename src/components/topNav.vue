@@ -21,7 +21,7 @@
                         </RouterLink>
                     </li>
                     <li class="nav-item">
-                        <RouterLink to="administration" class="nav-link">Administration</RouterLink>
+                        <RouterLink to="/admin" class="nav-link">Administration</RouterLink>
                     </li>
                 </ul>
 
@@ -36,7 +36,7 @@
                             <img src="../assets/images/nurse.jpg" class="rounded-circle" alt="" width="50" />
                         </a>
                         <ul class="dropdown-menu">
-                            <li><RouterLink to="settings" class="dropdown-item" >Profile</RouterLink></li>
+                            <li><RouterLink to="admin" class="dropdown-item" >Profile</RouterLink></li>
                             <li>
                                 <RouterLink class="dropdown-item" to="login">Logout</RouterLink>
                             </li>

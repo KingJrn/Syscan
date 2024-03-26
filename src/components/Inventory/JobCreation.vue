@@ -1,7 +1,13 @@
 <template>
-  <div class="mb-3 col">
-    <label class="form-label">Name your scan job</label>
-    <input type="text" class="form-control" placeholder="Name">
+  <div class="row mb-4">
+    <div class="col-xl-6 col-lg-6">
+      <label class="form-label">Name </label>
+      <input type="text" class="form-control" placeholder="Name">
+    </div>
+    <div class="col-xl-6 col-lg-6">
+      <label class="form-label">Description </label>
+      <input type="text" class="form-control" placeholder="Name">
+    </div>
   </div>
   <div class="row">
     <div class="col-xl-6 col-lg-6">

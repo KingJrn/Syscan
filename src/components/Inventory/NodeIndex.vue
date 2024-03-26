@@ -38,7 +38,7 @@
                                         </svg>
                                         <a href="javascript: void(0)" class="text-primary"> Back</a>
                                     </div>
-                                    <h3 v-if="showJobs === 'jobs'">Scan Jobs Creation</h3>
+                                    <h3 v-if="showJobs === 'jobs'">Add New Group</h3>
                                 </div>
                                 <div class="form-head d-flex mb-3 mb-md-4 align-items-start" v-if="add">
                                     <div class="me-auto d-none d-lg-block">
@@ -47,7 +47,7 @@
                                             Nodes</a>
                                         <a href="javascript:void();"
                                             class="btn btn-primary btn-sm btn-rounded add-staff ms-2" @click="AddJobs">+
-                                            Add New Jobs</a>
+                                            Add Node Groups</a>
                                     </div>
 
                                     <div class="input-group search-area ms-auto d-inline-flex me-3">
@@ -73,24 +73,122 @@
                         </div>
                         <div class="tab-pane fade" id="contact">
                             <div class="pt-4">
-                                <h4>This is contact title</h4>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
-                                </p>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.
-                                </p>
+                                <div class=" mt-4">
+                                    <h2>Project Management</h2>
+
+                                    <!-- Add New Project Form -->
+                                    <div class="card mt-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Add New Project</h5>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="projectName" class="form-label">Project Name</label>
+                                                    <input type="text" class="form-control" id="projectName"
+                                                        placeholder="Enter project name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="projectDescription" class="form-label">Project
+                                                        Description</label>
+                                                    <textarea class="form-control" id="projectDescription" rows="3"
+                                                        placeholder="Enter project description"></textarea>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Add Project</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <!-- List of Projects -->
+                                    <div class="mt-4">
+                                        <h5>List of Projects</h5>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h6>Project 1</h6>
+                                                        <p>Description of Project 1</p>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-info me-2">Edit</button>
+                                                        <button type="button"
+                                                            class="btn btn-sm btn-danger">Delete</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <!-- Add more projects as list items -->
+                                        </ul>
+                                    </div>
+
+                                    <!-- Invite Someone to a Project -->
+                                    <div class="card mt-4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Invite Someone to a Project</h5>
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="inputEmail" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="inputEmail"
+                                                        placeholder="Enter email">
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Invite</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="tab-pane fade" id="message">
                             <div class="pt-4">
-                                <h4>This is message title</h4>
-                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                    stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                </p>
-                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-                                    stumptown aliqua, retro synth master cleanse. Mustache cliche tempor.
-                                </p>
+                                <div class="mt-4">
+                                    <h2 class="mb-4">System Security Profiles</h2>
+                                    <div class="row justify-content-between">
+                                        <h3 class="col-md-6">Profiles List</h3>
+
+                                        <div class="col-md-4">
+                                            <!-- Search form -->
+                                            <form class="mb-3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Search profiles...">
+                                                    <button class="btn btn-primary" type="submit">Search</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- Profile list -->
+                                    <div class="row col-xl-12 justify-content-between">
+                                        <!-- Profile cards -->
+                                        <div class="card mb-3 col-xl-5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Profile 1</h5>
+                                                <p class="card-text">Description of Profile 1.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 col-xl-5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Profile 2</h5>
+                                                <p class="card-text">Description of Profile 2.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Profile list -->
+                                    <div class="row col-xl-12 justify-content-between">
+                                        <!-- Profile cards -->
+                                        <div class="card mb-3 col-xl-5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Profile 1</h5>
+                                                <p class="card-text">Description of Profile 1.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 col-xl-5">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Profile 2</h5>
+                                                <p class="card-text">Description of Profile 2.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
